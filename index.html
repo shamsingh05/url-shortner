@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindTone - Smart Link Shortener</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">Premium URL Shortener</div>
+      <div class="nav-right">
+        <span class="links">Features</span>
+        <span class="links">Pricing</span>
+        <span class="links">Login</span>
+        <button class="get-started">Get Started</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="text-sec">
+        <div class="text-content">
+
+          <h1 class="heading">Your Links, But <span>Smarter!</span></h1>
+          <form class="form">
+            <input class="input" id="inputField" placeholder="Paste Your Link" />
+            <button class="shortURL" type="submit">Enter</button>
+          </form>
+          <div class="button-row">
+            <button class="footerBTN">Get Started</button>
+            <button class="footerBTN">Learn More</button>
+          </div>
+          <p class="loadingUrl hid">LOADING SHORT LINK. Please Wait 😊</p>
+          <div class="qrSec hid">
+            <img id="imgqr" />
+            <a class="urlshort"></a>
+            <button class="copyurl">Copy Link</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prev-links-section">
+        <h2 class="prevLinks">Previous Links 🔗</h2>
+        <div id="linksWrapper" class="links-wrapper"></div>
+        <button id="showMoreBtn" class="show-more-btn hid">Show More</button>
+      </div>
+
+      <div class="footer">
+        <div class="part1">
+          <p class="footerT1">
+            Create clean, reliable links in seconds — No sign-up needed!
+          </p>
+          <button class="footerBTN" type="button">Generate Link</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</body>
+
+</html>
